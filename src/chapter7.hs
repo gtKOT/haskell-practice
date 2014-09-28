@@ -36,3 +36,22 @@ baseRect :: Float -> Float -> Shape
 baseRect width height = Rectangle (Point 0 0) (Point width height)
 -- baseXXXとnudgeを使って、任意のCircle,Rectangleを作れる
 
+
+
+data Person = Person {
+  firstName :: String,
+  lastName :: String,
+  age :: Int,
+  height :: Float,
+  phoneNumber :: String,
+  flavor :: String
+} deriving (Show)
+
+data Car = Car {
+  company :: String,
+  model :: String,
+  year :: Int
+} deriving (Show)
+
+-- Justは、値コンストラクタ
+
