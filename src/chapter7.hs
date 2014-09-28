@@ -1,5 +1,6 @@
 data Shape = Circle Float Float Float |
              Rectangle Float Float Float Float
+  deriving (Show)
 -- これだけで、CircleとRectangleは、値コンストラクタとして、他から認識される。
 
 area :: Shape -> Float
